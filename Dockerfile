@@ -30,9 +30,6 @@ RUN pip install -r requirements.txt
 
 COPY . /workspace
 
-# check file integrity
-RUN sha512sum -c sha512sums.txt
-
 EXPOSE 5000
 
 CMD python app.py
